@@ -1,7 +1,6 @@
-package com.automobile.data.model
+package com.automobile.data.models
 
 import kotlinx.serialization.Serializable
-import java.util.Currency
 
 @Serializable
 data class Car(
@@ -14,7 +13,6 @@ data class Car(
     val amountOfDoors: Int,
     val automatic: Boolean,
     val gpsAvailable: Boolean,
-    val vehicleLocation: String,
     val carPriceAmount: Double,
     val carPriceCurrency: String
 )
