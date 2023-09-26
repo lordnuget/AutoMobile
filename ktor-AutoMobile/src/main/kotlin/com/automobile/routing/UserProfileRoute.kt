@@ -10,11 +10,13 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.ktorm.dsl.*
 
-fun Application.userRoutes() {
+fun Application.userProfileRoutes() {
     val db = DatabaseConnection.database
 
+    /*
+     * Get UserProfile data by userProfileID
+     */
     routing {
-        // Get User data by carID
         get("/user/{id}") {
             val id = call.parameters["id"]?.toInt() ?: -1
             val user = db.from(UserProfileEntity)
@@ -27,7 +29,7 @@ fun Application.userRoutes() {
                     val dateOfBirth = it[UserProfileEntity.dateOfBirth]!!
                     val driversLicenceNumber = it[UserProfileEntity.driversLicenceNumber]!!
 
-                    UserProfile(userProfileID = userProfileID, firstName = firstName, lastName = lastName, dateOfBirth = dateOfBirth, driversLicenceNumber - driversLicenceNumber )
+                    UserProfile(userProfileID = userProfileID, firstName = firstName, lastName = lastName, dateOfBirth = dateOfBirth, driversLicenceNumber = driversLicenceNumber )
                 }.firstOrNull()
 
             if (user == null) {

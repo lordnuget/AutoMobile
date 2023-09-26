@@ -1,7 +1,6 @@
 package com.automobile.plugins
 
-import com.automobile.routing.carRoutes
-import com.automobile.routing.userRoutes
+import com.automobile.routing.*
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.response.*
@@ -14,8 +13,13 @@ fun Application.configureRouting() {
         }
     }
 
+    accountRoutes()
+    bonusPointsTransactionRoutes()
+    carAvailabilityRoutes()
+    carReservationRoutes()
     carRoutes()
-    userRoutes()
+    paymentRoutes()
+    userProfileRoutes()
 }
 
 

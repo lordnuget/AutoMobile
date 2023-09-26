@@ -8,14 +8,15 @@ import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.routing.*
 import io.ktor.server.response.*
-import kotlinx.css.datalist
 import org.ktorm.dsl.*
 
 fun Application.carRoutes() {
     val db = DatabaseConnection.database
 
+    /*
+     * Get Car data by carID
+     */
     routing {
-        // Get Car data by carID
         get("/car/{id}") {
             val id = call.parameters["id"]?.toInt() ?: -1
             val car = db.from(CarEntity)
@@ -57,7 +58,6 @@ fun Application.carRoutes() {
             }
         }
     }
-
 
 private const val BASE_URL = "http://localhost:8080"
 

@@ -5,43 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d9dbbc-dadc-48c1-9e12-1c95132b00b4" name="Changes" comment="Add Ktor project files">
-      <change afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/data/models/DateSerializer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/data/models/ResponseCall.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/data/models/UserProfile.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/database/DatabaseConnection.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/routing/CarRoute.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/routing/UserRoute.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/Application.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/data/dcl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/data/dcl.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/data/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/data/ddl.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/data/dml.sql" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/data/dml.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/data/model/Car.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/data/models/Car.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/entities/AccountEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/entities/AccountEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/entities/BonusPointsTransactionEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/entities/BonusPointsTransactionEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/entities/CarAvailabilityEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/entities/CarAvailabilityEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/entities/CarEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/entities/CarEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/entities/CarReservationEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/entities/CarReservationEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/entities/PaymentEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/entities/PaymentEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/entities/UserProfileEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/entities/UserProfileEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/plugins/Monitoring.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/plugins/Monitoring.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/plugins/Routing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/plugins/Routing.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/plugins/Serialization.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/plugins/Serialization.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/plugins/Templating.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/kotlin/com/automobile/plugins/Templating.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/kotlin/com/automobile/routes/CarRoute.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktor-rentACar/src/test/kotlin/com/automobile/ApplicationTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktor-AutoMobile/src/test/kotlin/com/automobile/ApplicationTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695475346353</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Ktor project files">
+      <option name="closed" value="true" />
+      <created>1695669678080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695669678080</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
