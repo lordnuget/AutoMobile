@@ -1,5 +1,6 @@
 package com.automobile.data.models
 
+import com.automobile.data.models.serializers.DateTimeSerializer
 import kotlinx.serialization.Serializable
 import java.time.LocalDateTime
 

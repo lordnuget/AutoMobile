@@ -1,4 +1,4 @@
-package com.automobile.data.models
+package com.automobile.data.models.serializers
 
 import kotlinx.serialization.*
 import kotlinx.serialization.descriptors.*
