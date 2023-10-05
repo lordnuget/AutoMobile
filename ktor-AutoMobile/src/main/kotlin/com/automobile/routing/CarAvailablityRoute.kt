@@ -1,11 +1,14 @@
 package com.automobile.routing
 
+import com.automobile.data.models.Car //CBakker
 import com.automobile.data.models.CarAvailablilty
 import com.automobile.data.models.ResponseCall
 import com.automobile.database.DatabaseConnection
 import com.automobile.entities.CarAvailabilityEntity
+import com.automobile.entities.CarEntity //Cbakker
 import io.ktor.http.*
 import io.ktor.server.application.*
+import io.ktor.server.request.* //CBakker
 import io.ktor.server.routing.*
 import io.ktor.server.response.*
 import org.ktorm.dsl.*
@@ -47,6 +50,31 @@ fun Application.carAvailabilityRoutes() {
                     )
                 )
 
+            }
+        }
+        post("/carAvailability/{CarID}"){
+            val id = call.parameters["CarID"]?.toInt() ?: -1
+            val request = call.receive<CarAvailablilty>()
+            val result =  db.insert(CarAvailabilityEntity){
+//                                        set(it.carID, request.carID)
+                set(it.carID, id)
+                set(it.carAvailabilityID, request.carAvailabilityID)
+                set(it.dateTimeFrom, request.dateTimeFrom)
+                set(it.dateTimeUntil, request.dateTimeUntil)
+
+            }
+            if (result == 1){
+                //succes
+                call.respond(HttpStatusCode.OK, ResponseCall(
+                    success = true,
+                    data = "Gegevens met succes opgeslagen"
+                ))
+            }else{
+                //false
+                call.respond(HttpStatusCode.BadRequest, ResponseCall(
+                    success = false,
+                    data =  "Sorry er ging wat mis bij het opslaan"
+                ))
             }
         }
     }

@@ -47,7 +47,7 @@ fun Application.accountRoutes() {
                         data = account
                     )
                 )
- // test
+
             }
         }
     }
